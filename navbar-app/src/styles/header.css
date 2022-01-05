@@ -7,7 +7,8 @@
 .header {
   background-color: var(--color-primary);
   padding: 0.5rem 2rem;
-  display: flex; }
+  display: flex; 
+}
   .header-link {
     text-align: center;
     padding: 1rem; }

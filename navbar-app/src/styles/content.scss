@@ -5,5 +5,12 @@
 }
 
 .main-content{
-    text-align:center;
+    // text-align:center;
+    margin: 2rem;
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    .content{
+        max-width: 28rem;
+    }
 }

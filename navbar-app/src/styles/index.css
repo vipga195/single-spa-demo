@@ -32,6 +32,11 @@
   height: 100vh; }
 
 .main-content {
-  text-align: center; }
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  .main-content .content {
+    max-width: 28rem; }
 
 /*# sourceMappingURL=index.css.map */
