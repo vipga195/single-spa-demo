@@ -1,0 +1,21 @@
+.ml-auto {
+    margin-left: auto;
+}
+.mr-auto {
+    margin-right: auto;
+}
+
+.header {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 0.5rem 2rem;
+    &-link {
+        text-align: center;
+        padding: 1rem;
+        &:not(:last-child) {
+            &:hover {
+                background-color: var(--color-secondary);
+            }
+        }
+    }
+}
