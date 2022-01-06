@@ -18,7 +18,12 @@ const Content = () => {
                         abc
                     </div>
                 </Route>
-                <Route path="/" >
+                {/* <Route path="/vue" exact>
+                    <div className="content">
+                        Vue
+                    </div>
+                </Route> */}
+                <Route path="/" exact>
                     <div className="content">
                         This example project shows independently built and deployed microfrontends that use React and single-spa. Each nav link above takes you to a different microfrontend.
                     </div>

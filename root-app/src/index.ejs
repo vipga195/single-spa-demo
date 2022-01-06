@@ -49,8 +49,10 @@
       "imports": {
         "@medium/root-config": "//localhost:9000/medium-root-config.js",
         "@medium/navbar": "//localhost:9001/medium-narbar.js",
-        "@medium/next": "//localhost:9002/medium-next-app.js",
+        "@medium/vue": "//localhost:9002/js/app.js",
         "react" : "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
+        "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
+        "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js"
       }
     }
@@ -80,8 +82,6 @@
   <main></main>
   <script>
     System.import('@medium/root-config');
-    System.import('@medium/navbar');
-    System.import('@medium/next');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

@@ -1,16 +1,24 @@
+/* eslint-disable no-console */
 import { registerApplication, start } from "single-spa";
 
 registerApplication({
   name: "@medium/navbar",
-  app: () => System.import("@medium/navbar"),
+  app: (els) => {
+    console.log(els);
+    return System.import(els.name);
+  },
   activeWhen: ["/"],
 });
 
 registerApplication({
-  name: "@medium/next",
-  app: () => System.import("@medium/next"),
-  activeWhen: ["/next"],
+  name: "@medium/vue",
+  app: (els) => {
+    console.log(els);
+    return System.import(els.name);
+  },
+  activeWhen: ["/vue"],
 });
+
 // registerApplication({
 //   name: "@medium/navbar",
 //   app: () => System.import("@medium/navbar"),
