@@ -1,10 +1,30 @@
 import React from 'react';
+import {
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 const Content = () => {
     return (
         <div className="main-content">
-            <div className="content">
-            This example project shows independently built and deployed microfrontends that use React and single-spa. Each nav link above takes you to a different microfrontend.    
-            </div> 
+            <Switch>
+                <Route path="/people" exact>
+                    <div className="content">
+                        xyz
+                    </div>
+                </Route>
+                <Route path="/planets" exact>
+                    <div className="content">
+                        abc
+                    </div>
+                </Route>
+                <Route path="/" >
+                    <div className="content">
+                        This example project shows independently built and deployed microfrontends that use React and single-spa. Each nav link above takes you to a different microfrontend.
+                    </div>
+                </Route>
+            </Switch>
+
         </div>
     )
 }

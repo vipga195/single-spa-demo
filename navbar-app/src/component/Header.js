@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className='header'>
-            <div className='header-link'>People</div>
-            <div className='header-link'>Planets</div>
-            <div className='ml-auto header-link'>Github project</div>
+            <Link to={"/people"} className='header-link'>People</Link>
+            <Link to={"/planets"} className='header-link'>Planets</Link>
+            <Link to={"/"} className='ml-auto header-link'>Github project</Link>
         </div>
     )
 }

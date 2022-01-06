@@ -1,0 +1,14 @@
+.main {
+  background-color: var(--color-background);
+  color: var(--color-white);
+  height: 100vh; }
+
+.main-content {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  .main-content .content {
+    max-width: 28rem; }
+
+/*# sourceMappingURL=content.css.map */

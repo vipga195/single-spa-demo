@@ -13,8 +13,11 @@
     &-link {
         text-align: center;
         padding: 1rem;
+        color: inherit;
+        text-decoration: none;
         &:not(:last-child) {
             &:hover {
+                color: inherit;
                 background-color: var(--color-secondary);
             }
         }

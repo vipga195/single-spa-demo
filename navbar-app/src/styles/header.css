@@ -5,14 +5,17 @@
   margin-right: auto; }
 
 .header {
+  color: var(--color-white);
   background-color: var(--color-primary);
   padding: 0.5rem 2rem;
-  display: flex; 
-}
+  display: flex; }
   .header-link {
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    color: inherit;
+    text-decoration: none; }
     .header-link:not(:last-child):hover {
+      color: inherit;
       background-color: var(--color-secondary); }
 
 /*# sourceMappingURL=header.css.map */
