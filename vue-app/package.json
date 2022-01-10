@@ -10,11 +10,11 @@
     "serve:standalone": "vue-cli-service serve --mode standalone"
   },
   "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "core-js": "^3.6.5",
     "single-spa-vue": "^2.5.1",
     "systemjs-webpack-interop": "^2.3.7",
     "vue": "^2.6.11",
-    "webpack-config-single-spa-react": "^4.0.3",
     "webpack-merge": "^5.8.0"
   },
   "devDependencies": {

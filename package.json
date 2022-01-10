@@ -4,7 +4,7 @@
     "install": "concurrently \"npm run install-root\" \"npm run install-navbar\" \"npm run install-vue\"",
     "root": "cd root-app && npm run start",
     "navbar": "cd navbar-app && npm run start",
-    "vue": "cd vue-app && npm run start",
+    "vue": "cd vue-app && npm run serve",
     "install-root": "cd root-app && npm i",
     "install-navbar": "cd navbar-app && npm i",
     "install-vue": "cd vue-app && npm i"

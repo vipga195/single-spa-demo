@@ -11,7 +11,7 @@ registerApplication({
 });
 
 registerApplication({
-  name: "@medium/vue",
+  name: "@medium/vue-app",
   app: (els) => {
     console.log(els);
     return System.import(els.name);

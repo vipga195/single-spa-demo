@@ -1,15 +1,31 @@
-const { merge } = require("webpack-merge");
-const singleSpaDefaults = require("webpack-config-single-spa-react");
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-module.exports = (webpackConfigEnv, argv) => {
-  const defaultConfig = singleSpaDefaults({
-    orgName: "medium",
-    projectName: "vue",
-    webpackConfigEnv,
-    argv,
-  });
-
-  return merge(defaultConfig, {
-    // modify the webpack config however you'd like to by adding to this object
-  });
-};
+module.exports = (env) => ({
+  entry: path.resolve(__dirname, "src/main"),
+  output: {
+    filename: "vue.js",
+    libraryTarget: "system",
+    path: path.resolve(__dirname, "dist"),
+  },
+  devtool: "sourcemap",
+  module: {
+    rules: [
+      { parser: { system: false } },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [{ loader: "babel-loader" }],
+      },
+    ],
+  },
+  devServer: {
+    historyApiFallback: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+    disableHostCheck: true,
+  },
+  plugins: [new CleanWebpackPlugin()],
+  externals: ["single-spa", /^@isomorphic-mf\/.+$/],
+});

@@ -1,6 +1,7 @@
 import './set-public-path';
 import Vue from 'vue';
 import App from './App.vue';
+import router from './router'
 import singleSpaVue from 'single-spa-vue';
 
 const vueLifecycles = singleSpaVue({
@@ -9,6 +10,7 @@ const vueLifecycles = singleSpaVue({
     render(h) {
       return h(App);
     },
+    router,
   },
 });
 

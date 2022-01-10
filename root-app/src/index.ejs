@@ -17,7 +17,7 @@
     Learn more about CSP policies at https://content-security-policy.com/#directive
   -->
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
+    content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
   <!-- If you wish to turn off import-map-overrides for specific environments (prod), uncomment the line below -->
   <!-- More info at https://github.com/joeldenning/import-map-overrides/blob/master/docs/configuration.md#domain-list -->
@@ -49,7 +49,7 @@
       "imports": {
         "@medium/root-config": "//localhost:9000/medium-root-config.js",
         "@medium/navbar": "//localhost:9001/medium-narbar.js",
-        "@medium/vue": "//localhost:9002/js/app.js",
+        "@medium/vue-app": "http://localhost:9002/js/app.js",
         "react" : "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
         "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
         "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js",
