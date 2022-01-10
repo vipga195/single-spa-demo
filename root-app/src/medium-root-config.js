@@ -1,21 +1,20 @@
 /* eslint-disable no-console */
 import { registerApplication, start } from "single-spa";
 
+const router = (els) => {
+  // console.log(els);
+  return System.import(els.name);
+};
+
 registerApplication({
   name: "@medium/navbar",
-  app: (els) => {
-    console.log(els);
-    return System.import(els.name);
-  },
+  app: router,
   activeWhen: ["/"],
 });
 
 registerApplication({
   name: "@medium/vue-app",
-  app: (els) => {
-    console.log(els);
-    return System.import(els.name);
-  },
+  app: router,
   activeWhen: ["/vue"],
 });
 

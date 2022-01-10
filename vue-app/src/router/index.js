@@ -14,8 +14,13 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/people',
+      path: '/vue/people',
       name: 'People',
+      component: People
+    },
+    {
+      path: '/vue/vue',
+      name: 'Vue',
       component: People
     }
   ]

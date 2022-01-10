@@ -1,12 +1,20 @@
 <template>
   <div class="container">
-      people vue
+      {{title}}
   </div>
 </template>
 
 <script>
 export default {
-name:"people"
+name:"people",
+data:()=>{
+    return{
+        title:"people"
+    }
+},
+created(){
+    this.title = this.$route.name
+}
 }
 </script>
 
