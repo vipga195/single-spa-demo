@@ -32,10 +32,10 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul> -->
         <div>
-            <router-link to="vue/people">People</router-link>
+            <router-link to="/vue/people">People</router-link>
         </div>
         <div>
-            <router-link to="vue/vue">Vue</router-link>
+            <router-link to="/vue/planet">Planet</router-link>
         </div>
         <router-view></router-view>
     </div>

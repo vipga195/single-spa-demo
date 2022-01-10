@@ -19,8 +19,8 @@ export default new Router({
       component: People
     },
     {
-      path: '/vue/vue',
-      name: 'Vue',
+      path: '/vue/planet',
+      name: 'Planet',
       component: People
     }
   ]

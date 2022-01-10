@@ -2,6 +2,7 @@
   "scripts": {
     "start": "concurrently \"npm run root\" \"npm run navbar\" \"npm run vue\"",
     "install": "concurrently \"npm run install-root\" \"npm run install-navbar\" \"npm run install-vue\"",
+    "test": "concurrently \"cd root-app && npm test\" ",
     "root": "cd root-app && npm run start",
     "navbar": "cd navbar-app && npm run start",
     "vue": "cd vue-app && npm run serve",
@@ -10,7 +11,6 @@
     "install-vue": "cd vue-app && npm i"
   },
   "dependencies": {
-    "concurrently": "^7.0.0",
-    "single-spa-vue": "^2.5.1"
+    "concurrently": "^7.0.0"
   }
 }
