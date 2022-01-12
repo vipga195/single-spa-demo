@@ -22,14 +22,14 @@ export default {
     components: {
         HelloWorld,
     },
-    created() {
-        let img = new Image();
-        img.src = require("./assets/logo.png");
-        console.log({ img });
-        img.onload = (e) => {
-            console.log({ e });
-        };
-    },
+    // created() {
+    //     let img = new Image();
+    //     img.src = require("./assets/logo.png");
+    //     console.log({ img });
+    //     img.onload = (e) => {
+    //         console.log({ e });
+    //     };
+    // },
 };
 </script>
 

@@ -32,7 +32,8 @@
 .main {
   background-color: var(--color-background);
   color: var(--color-white);
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 2rem; }
 
 .main-content {
   display: flex;

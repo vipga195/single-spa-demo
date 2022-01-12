@@ -1,13 +1,15 @@
 {
   "scripts": {
-    "start": "concurrently \"npm run root\" \"npm run navbar\" \"npm run vue\"",
-    "install": "concurrently \"npm run install-root\" \"npm run install-navbar\" \"npm run install-vue\"",
+    "start": "concurrently \"npm run root\" \"npm run navbar\" \"npm run vue\" \"npm run react\"",
+    "install": "concurrently \"npm run install-root\" \"npm run install-navbar\" \"npm run install-vue\" \"npm run install-vue\"",
     "test": "concurrently \"cd root-app && npm test\" ",
     "root": "cd root-app && npm run start",
     "navbar": "cd navbar-app && npm run start",
     "vue": "cd vue-app && npm run serve",
+    "react": "cd react-app && npm run start",
     "install-root": "cd root-app && npm i",
     "install-navbar": "cd navbar-app && npm i",
+    "install-react": "cd react-app && npm i",
     "install-vue": "cd vue-app && npm i"
   },
   "dependencies": {

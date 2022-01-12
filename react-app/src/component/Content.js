@@ -8,12 +8,12 @@ const Content = () => {
     return (
         <div className="main-content">
             <Switch>
-                <Route path="/people" exact>
+                <Route path="/react/people" exact>
                     <div className="content">
                         xyz
                     </div>
                 </Route>
-                <Route path="/planets" exact>
+                <Route path="/react/planets" exact>
                     <div className="content">
                         abc
                     </div>
@@ -23,7 +23,7 @@ const Content = () => {
                         Vue
                     </div>
                 </Route> */}
-                <Route path="/" exact>
+                <Route path="/" >
                     <div className="content">
                         This example project shows independently built and deployed microfrontends that use React and single-spa. Each nav link above takes you to a different microfrontend.
                     </div>
