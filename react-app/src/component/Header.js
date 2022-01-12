@@ -6,7 +6,6 @@ const Header = () => {
             <Link to={"/people"} className='header-link'>People</Link>
             <Link to={"/planets"} className='header-link'>Planets</Link>
             <Link to={"/vue"} className='header-link'>Vue</Link>
-            <Link to={"/react"} className='header-link'>React</Link>
             <Link to={"/"} className='ml-auto header-link'>Github project</Link>
         </div>
     )

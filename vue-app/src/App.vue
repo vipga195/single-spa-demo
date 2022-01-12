@@ -1,8 +1,11 @@
 <template>
-    <div id="app">
+    <div
+        id="app"
+        class="main"
+    >
         <img
             alt="Vue logo"
-            src="./assets/logo.png"
+            :src="logo"
         >
         <HelloWorld msg="Welcome to Your Vue.js App" />
     </div>
@@ -13,8 +16,19 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
     name: "App",
+    data: () => {
+        return { logo: require("./assets/logo.png") };
+    },
     components: {
         HelloWorld,
+    },
+    created() {
+        let img = new Image();
+        img.src = require("./assets/logo.png");
+        console.log({ img });
+        img.onload = (e) => {
+            console.log({ e });
+        };
     },
 };
 </script>
@@ -25,7 +39,5 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
 }
 </style>

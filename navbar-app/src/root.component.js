@@ -6,9 +6,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 const Root = (props) => {
   return (
     <Router>
-      <div className="main">
+      <div >
         <Header />
-        <Content />
+        {/* <Content /> */}
       </div>
     </Router>
   );

@@ -39,7 +39,7 @@
     }
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
-
+  <link href="./index.css" rel="stylesheet" type="text/css" />
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
@@ -49,6 +49,7 @@
       "imports": {
         "@medium/root-config": "//localhost:9000/medium-root-config.js",
         "@medium/navbar": "//localhost:9001/medium-narbar.js",
+        "@medium/react-app": "//localhost:9004/medium-react.js",
         "@medium/vue-app": "http://localhost:9002/js/app.js",
         "react" : "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
         "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
@@ -79,12 +80,12 @@
         <application name="@medium/navbar" loader="topNav" error="topNav"></application>
       </nav>
       <div class="main-content mt-16 d-none">
-        <route path="people">
-          <application name="@medium/navbar"></application>
+        <route path="/react">
+          <application name="@medium/react-app"></application>
         </route>
-        <route path="planets">
+        <!-- <route path="planets">
           <application name="@medium/navbar"></application>
-        </route>
+        </route> -->
         <route path="vue">
           <application name="@medium/vue-app"></application>
         </route>
@@ -111,6 +112,7 @@
   <main></main>
   <script>
     System.import('@medium/root-config');
+    System.import("@medium/navbar");
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

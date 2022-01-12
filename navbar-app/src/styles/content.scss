@@ -1,16 +1,16 @@
-.main{
+.main {
     background-color: var(--color-background);
     color: var(--color-white);
-    height:100vh;
+    height: 100vh;
 }
 
-.main-content{
+.main-content {
     // text-align:center;
-    margin: 2rem;
-    display: flex; 
+    // margin: 2rem;
+    display: flex;
     justify-content: center;
     flex-direction: row;
-    .content{
+    .content {
         max-width: 28rem;
     }
 }

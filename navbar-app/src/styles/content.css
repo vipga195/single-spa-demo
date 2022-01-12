@@ -4,7 +4,6 @@
   height: 100vh; }
 
 .main-content {
-  margin: 2rem;
   display: flex;
   justify-content: center;
   flex-direction: row; }
