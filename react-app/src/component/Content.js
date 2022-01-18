@@ -4,7 +4,9 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import logo from "../assets/logo.png"
 const Content = () => {
+    console.log({ logo })
     return (
         <div className="main-content">
             <Switch>
@@ -16,6 +18,7 @@ const Content = () => {
                 <Route path="/react/planets" exact>
                     <div className="content">
                         abc
+                        <img src={logo} />
                     </div>
                 </Route>
                 {/* <Route path="/vue" exact>

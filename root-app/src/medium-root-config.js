@@ -50,7 +50,7 @@ applications.forEach((els) => {
     app: router,
   });
 });
-layoutEngine.activate();
+// layoutEngine.activate();
 start({
   urlRerouteOnly: true,
 });
