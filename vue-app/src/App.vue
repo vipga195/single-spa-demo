@@ -5,7 +5,7 @@
     >
         <img
             alt="Vue logo"
-            :src="logo"
+            src="@/assets/logo.png"
         >
         <HelloWorld msg="Welcome to Your Vue.js App" />
     </div>
@@ -13,23 +13,12 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
     name: "App",
-    data: () => {
-        return { logo: require("./assets/logo.png") };
-    },
+
     components: {
         HelloWorld,
     },
-    // created() {
-    //     let img = new Image();
-    //     img.src = require("./assets/logo.png");
-    //     console.log({ img });
-    //     img.onload = (e) => {
-    //         console.log({ e });
-    //     };
-    // },
 };
 </script>
 

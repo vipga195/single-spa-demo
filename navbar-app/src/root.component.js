@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const Root = (props) => {
+  console.log({ props })
   return (
     <Router>
       <div >
