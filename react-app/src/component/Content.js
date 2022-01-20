@@ -4,7 +4,9 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import logo from "../assets/logo.png"
+import logo from '../assets/logo.svg';
+import logo2 from '../assets/coin_drg_1.png';
+
 const Content = () => {
     console.log({ logo })
     return (
@@ -17,8 +19,23 @@ const Content = () => {
                 </Route>
                 <Route path="/react/planets" exact>
                     <div className="content">
-                        abc
-                        <img src={logo} />
+                        <div className="App">
+                            <header className="App-header">
+                                <img src={logo} className="App-logo" alt="logo" />
+                                <img src={logo2} className="App-logo" alt="logo" style={{ maxWidth: "50%" }} />
+                                <p>
+                                    Edit <code>src/App.js</code> and save to reload.
+                                </p>
+                                <a
+                                    className="App-link"
+                                    href="https://reactjs.org"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Learn React
+                                </a>
+                            </header>
+                        </div>
                     </div>
                 </Route>
                 {/* <Route path="/vue" exact>
@@ -33,7 +50,7 @@ const Content = () => {
                 </Route>
             </Switch>
 
-        </div>
+        </div >
     )
 }
 export default Content

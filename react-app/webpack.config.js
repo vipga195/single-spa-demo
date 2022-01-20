@@ -7,6 +7,8 @@ module.exports = (webpackConfigEnv, argv) => {
         orgName: "medium",
         projectName: "react",
         webpackConfigEnv,
+        orgPackagesAsExternal: true,
+        rootDirectoryLevel: 1,
         argv,
     });
 
@@ -25,13 +27,6 @@ module.exports = (webpackConfigEnv, argv) => {
                     use: ['babel-loader?cacheDirectory'],
                     exclude: /node_modules/,
                 },
-                {
-                    test: /\.(png|jpe?g|gif)$/i,
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'assets',
-                    },
-                }
             ]
         },
         mode: 'development',
